@@ -1,6 +1,10 @@
 {
   "name": "msn-ui",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samieinejad/msn-ui"
+  },
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
