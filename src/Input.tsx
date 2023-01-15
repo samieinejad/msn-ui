@@ -1,8 +1,16 @@
-import React from 'react';
+import React, {DetailedHTMLProps, FC, FunctionComponent, HTMLAttributes, InputHTMLAttributes} from 'react';
 
-const Input = () => {
+interface Props {
+    rest?: DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>,
+    bgColor: string,
+    // rest: Props
+
+}
+
+const Input: FC<Props> = (props) => {
+    const {rest, bgColor} = props;
     return (
-        <input />
+        <input  {...rest}/>
     );
 };
 
