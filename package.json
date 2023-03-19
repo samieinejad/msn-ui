@@ -1,9 +1,9 @@
 {
-  "name": "msn-ui",
+  "name": "mapir-react-component",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/samieinejad/msn-ui"
+    "url": "https://github.com/samieinejad/mapir-react-component"
   },
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -15,8 +15,7 @@
   "scripts": {
     "build": "yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
-    "watch": "tsc --watch & tsc --watch --module commonjs --outDir lib/cjs"
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
@@ -29,5 +28,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "mapbox-gl": "^2.13.0",
+    "react-mapbox-gl": "^5.1.1",
+    "react-mapbox-gl-draw": "^2.0.4"
+  }
 }
